@@ -1,17 +1,23 @@
-#String
-##String Functions
-### 1. Concatenation
-#### using + operator
-```
+# Basic String Operations in C++
+
+This file contains basic string operations in C++ such as initialization, length calculation, accessing characters, concatenation, and substring extraction.
+
+## 1. String Initialization
+
+There are several ways to initialize strings in C++.
+
+```cpp
 #include <iostream>
 #include <string>
 
 int main() {
-    std::string str1 = "Hello, ";
-    std::string str2 = "World!";
-    std::string result = str1 + str2;
-    std::cout << result << std::endl;  // Output: Hello, World!
-    return 0;
-}
+    std::string str1 = "Hello, World!";
+    std::string str2("Hello, World!");  // Another way to initialize
+    std::string str3(str1);  // Copy constructor
+    std::string str4(5, 'A');  // Creates a string of 5 'A's (AAAAA)
 
-```
+    std::cout << "String 1: " << str1 << std::endl;
+    std::cout << "String 2: " << str2 << std::endl;
+    std::cout << "String 3 (copy of String 1): " << str3 << std::endl;
+    std::cout << "String 4 (initialized with 5 A's): " << str4 << std::endl;
+}
