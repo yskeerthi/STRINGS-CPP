@@ -361,7 +361,7 @@ str.erase(5, 7);  // Output: Hello!
 ```
 
 
-#Advanced String Algorithms
+# Advanced String Algorithms
 
 ### 1. Knuth-Morris-Pratt (KMP) Algorithm
 
